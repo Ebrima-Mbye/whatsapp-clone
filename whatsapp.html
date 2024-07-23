@@ -12,11 +12,19 @@
     <link rel="stylesheet" href="/styles/right-interractions-panel.css" />
   </head>
   <body>
-    <div class="top-panel"></div>
+    <div class="top-panel">
+      <div class="whatsapp-icon-container">
+        <!-- Placeholder for the WhatsApp icon -->
+        <p class="whatsapp-icon-placeholder icon-placeholder">W</p>
+        <p class="whatsapp-label">WhatsApp</p>
+      </div>
+      <div class="connection-status-container">
+        <p class="connection-status-icon icon-placeholder">C</p>
+        <p>No connection</p>
+      </div>
+    </div>
     <div class="left-side-panel"></div>
 
-    <!-- The two main divs of the chats page -->
-    <!-- <div class="main-panel"> -->
     <div class="chats-panel">
       <div class="chats-panel-header">
         <div class="chats-panel-header-top">
@@ -29,7 +37,10 @@
         </div>
         <div class="chats-panel-header-bottom">
           <div class="chats-panel-search-panel">
-            <img class="chats-panel-search-icon" src="/icons/search.svg" />
+            <img
+              class="chats-panel-search-icon"
+              src="/icons/whatsapp-search-icon-2.png"
+            />
             <input
               class="chats-panel-search"
               placeholder="Search or start a new chat"

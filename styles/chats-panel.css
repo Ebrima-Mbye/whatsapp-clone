@@ -1,4 +1,4 @@
-p{
+p {
   display: inline-block;
 }
 .chats-panel {
@@ -58,9 +58,7 @@ p{
   border: none;
   border-radius: 0 5px 5px 0;
 }
-.chats-panel-search:hover {
-  background-color: black;
-}
+
 .chats-panel-search,
 .chats-panel-search-icon {
   background-color: rgb(69, 69, 69);
@@ -83,8 +81,10 @@ p{
 
 .chats-panel-search-icon {
   transform: scaleX(-1);
-  width: 20px;
-  margin-right: 5px;
+  width: 15px;
+  margin-right: 8px;
+  cursor: text;
+  background: transparent;
 }
 
 .chats-main-conatiner {
