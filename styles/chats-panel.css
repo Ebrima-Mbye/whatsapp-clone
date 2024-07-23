@@ -1,26 +1,89 @@
 .chats-panel {
-    position: fixed;
-    top: 45px;
-    left: 50px;
-    bottom: 0;
-    width: 300px;
-    background-color: rgb(50, 50, 50);
-    border-radius: 6px 0 0 0;
-    box-shadow: 1px 0 2px rgb(37, 37, 37);
-    z-index: 101;
+  position: fixed;
+  top: 45px;
+  left: 50px;
+  bottom: 0;
+  width: 300px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 6px 0 0 0;
+  box-shadow: 1px 0 2px rgb(37, 37, 37);
+  z-index: 101;
+  color: white;
 }
 
 .chats-panel-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 120px;
-    background-color: red;
-    border-radius: 6px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  border-radius: 6px 0 0 0;
+  padding: 0 20px;
 }
 
-@media(mx-width: 600px) {
+.chats-panel-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chats-panel-chats-label {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.chats-panel-header-top-right {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.chats-panel-header-bottom {
+  width: 100%;
+  margin-top: 5px;
+  height: 35px;
+  width: 100%;
+}
+
+.chats-panel-search {
+  height: 30px;
+  width: 90%;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+.chats-panel-search:hover {
+  background-color: black;
+}
+.chats-panel-search,
+.chats-panel-search-icon {
+  background-color: rgb(69, 69, 69);
+}
+
+.chats-panel-search::placeholder {
+  color: rgb(188, 187, 187);
+}
+.chats-panel-search-panel {
+  margin-top: -5px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(69, 69, 69);
+  padding-left: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(163, 163, 163);
+}
+
+.chats-panel-search-icon {
+  transform: scaleX(-1);
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* @media(mx-width: 600px) {
     .chats-panel {
         width: 300px;
     }
@@ -30,4 +93,4 @@
     .chats-panel {
         width: 300px;
     }
-}
+} */
