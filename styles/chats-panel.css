@@ -1,0 +1,33 @@
+.chats-panel {
+    position: fixed;
+    top: 45px;
+    left: 50px;
+    bottom: 0;
+    width: 300px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 6px 0 0 0;
+    box-shadow: 1px 0 2px rgb(37, 37, 37);
+    z-index: 101;
+}
+
+.chats-panel-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background-color: red;
+    border-radius: 6px 0 0 0;
+}
+
+@media(mx-width: 600px) {
+    .chats-panel {
+        width: 300px;
+    }
+}
+
+@media(mx-width: 600px) {
+    .chats-panel {
+        width: 300px;
+    }
+}
