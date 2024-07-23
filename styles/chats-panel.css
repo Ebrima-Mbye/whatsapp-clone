@@ -1,3 +1,6 @@
+p{
+  display: inline-block;
+}
 .chats-panel {
   position: fixed;
   display: flex;
@@ -125,11 +128,10 @@
   position: relative;
 }
 .last-message-time {
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(202, 202, 202);
-  position: absolute;
-  top: 15px;
-  right: 10px;
+  width: 50px;
+  margin-top: 10px;
 }
 .chat-container p {
   margin-top: 5px;
@@ -143,9 +145,16 @@
   width: 55px;
   border-radius: 50%;
 }
-.chat-name-and-message-container {
-  background-color: red;
+.chat-preview-container {
+  max-width: 75%;
   flex: 1;
+}
+.chat-name-and-time-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+  /* background-color: pink; */
 }
 .chat-name,
 .recent-message {
@@ -154,10 +163,10 @@
   text-overflow: ellipsis;
 }
 .recent-message {
-  width: 30%;
+  width: 90%;
   color: rgb(216, 216, 216);
 }
 .chat-name {
   font-weight: bold;
-  width: 17%;
+  width: 70%;
 }
