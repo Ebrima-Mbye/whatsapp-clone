@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Chat</title>
+    <style>
+      body {
+        font-family: arial;
+        background-color: gray;
+      }
+      .chats-main-conatiner {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        width: 330px;
+        background-color: rgb(69, 69, 69);
+        max-height: 100vh;
+        scrollbar-width: 12px;
+        scrollbar-color: rgb(155, 155, 155);
+      }
+
+      .chats-main-conatiner::-webkit-scrollbar {
+        width: 12px;
+      }
+      .chats-main-conatiner::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .chats-main-conatiner::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+      }
+      .chats-main-conatiner::-webkit-scrollbar-thumb:hover {
+        background: rgb(155, 155, 155);
+      }
+
+      .chat-container {
+        display: flex;
+        align-items: top;
+        background-color: rgb(69, 69, 69);
+        width: 300px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        color: white;
+        position: relative;
+      }
+      .last-message-time {
+        font-size: 14px;
+        color: rgb(202, 202, 202);
+        position: absolute;
+        top: 15px;
+        right: 10px;
+      }
+      .chat-container p {
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+      .profile-picture {
+        width: 55px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      .chat-name,
+      .recent-message {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .recent-message {
+            width: 200px;
+        }
+        .chat-name {
+            font-weight: bold;
+            width: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="chats-main-conatiner">
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="profile-picture-container">
+          <img
+            class="profile-picture"
+            src="/profile-pictures/profile-picture-1.jpeg"
+          />
+        </div>
+        <div class="chat-name-and-message-container">
+          <p class="chat-name">Marquez Brownlee</p>
+          <p class="recent-message">😂 Check this out. A brand new . A brand new . A brand new . A brand new . A brand new </p>
+        </div>
+
+        <!-- The time when the last message was sent or recieved -->
+         <div class="last-message-time">20/07/2024</div>
+      </div>
+    </div>
+  </body>
+</html>

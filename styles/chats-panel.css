@@ -1,9 +1,10 @@
 .chats-panel {
   position: fixed;
+  display: flex;
   top: 45px;
   left: 50px;
   bottom: 0;
-  width: 300px;
+  width: 330px;
   background-color: rgb(50, 50, 50);
   border-radius: 6px 0 0 0;
   box-shadow: 1px 0 2px rgb(37, 37, 37);
@@ -83,14 +84,80 @@
   margin-right: 5px;
 }
 
-/* @media(mx-width: 600px) {
-    .chats-panel {
-        width: 300px;
-    }
+.chats-main-conatiner {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 100%;
+  background: transparent;
+  max-height: 100vh;
+  scrollbar-width: 12px;
+  scrollbar-color: rgb(155, 155, 155);
+  margin-top: 120px;
 }
 
-@media(mx-width: 600px) {
-    .chats-panel {
-        width: 300px;
-    }
-} */
+.chats-main-conatiner::-webkit-scrollbar {
+  width: 7px;
+}
+.chats-main-conatiner::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chats-main-conatiner::-webkit-scrollbar-thumb {
+  background: rgb(155, 155, 155);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.chats-main-conatiner::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+  background-color: rgb(183, 183, 183);
+}
+.chat-container {
+  display: flex;
+  align-items: top;
+  background: transparent;
+  width: 300px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  color: white;
+  position: relative;
+}
+.last-message-time {
+  font-size: 14px;
+  color: rgb(202, 202, 202);
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.chat-container p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.profile-picture-container {
+  width: 55px;
+  margin-right: 20px;
+}
+.profile-picture {
+  width: 55px;
+  border-radius: 50%;
+}
+.chat-name-and-message-container {
+  background-color: red;
+  flex: 1;
+}
+.chat-name,
+.recent-message {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.recent-message {
+  width: 30%;
+  color: rgb(216, 216, 216);
+}
+.chat-name {
+  font-weight: bold;
+  width: 17%;
+}
