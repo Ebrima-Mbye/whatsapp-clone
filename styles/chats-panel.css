@@ -8,7 +8,7 @@ p{
   left: 50px;
   bottom: 0;
   width: 330px;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(45, 45, 45);
   border-radius: 6px 0 0 0;
   box-shadow: 1px 0 2px rgb(37, 37, 37);
   z-index: 101;
@@ -34,7 +34,7 @@ p{
 }
 
 .chats-panel-chats-label {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 23px;
 }
 
@@ -96,7 +96,7 @@ p{
   max-height: 100vh;
   scrollbar-width: 12px;
   scrollbar-color: rgb(155, 155, 155);
-  margin-top: 120px;
+  margin-top: 130px;
 }
 
 .chats-main-conatiner::-webkit-scrollbar {
@@ -124,6 +124,7 @@ p{
   padding-top: 10px;
   padding-bottom: 5px;
   margin-bottom: 5px;
+  margin-left: 10px;
   color: white;
   position: relative;
 }
