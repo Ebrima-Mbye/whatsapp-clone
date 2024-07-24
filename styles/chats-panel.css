@@ -142,10 +142,12 @@ p {
 }
 .profile-picture-container {
   width: 55px;
+  height: 55px;
   margin-right: 20px;
 }
 .profile-picture {
   width: 55px;
+  height: 55px;
   border-radius: 50%;
 }
 .chat-preview-container {
