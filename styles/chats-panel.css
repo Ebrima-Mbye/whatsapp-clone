@@ -12,6 +12,9 @@ p {
   margin-top: 45px;
   height: 92vh;
   width: 350px;
+  width: 35%;
+  max-width: 420px;
+  min-width: 100px;
   /* flex: 1; */
   background-color: rgb(45, 45, 45);
   border-radius: 6px 0 0 0;
