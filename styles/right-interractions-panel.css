@@ -1,14 +1,8 @@
 .right-interractions-panel {
-  /* position: fixed;
-  right: 0;
-  top: 45px;
-  bottom: 0;
-  left: 350px; */
-
   background-color: rgb(45, 45, 45);
-  background-color: red;
+  /* background-color: red; */
   z-index: 100;
-  border: 10px solid green;
+  /* border: 10px solid green; */
   margin-top: 45px;
 
   flex: 1;

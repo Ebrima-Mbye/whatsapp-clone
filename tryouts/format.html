@@ -3,16 +3,16 @@
     <img class="profile-picture" src="${contact.profilePicture}" />
   </div>
   <div class="chat-preview-container">
+    <!-- The time when the last message was sent or recieved -->
+    <div
+      class="last-message-time js-last-message-time"
+      data-contact-id="${contact.id}"
+    >
+      ${contact.lastChatDate}
+    </div>
     <div class="chat-name-and-time-container">
       <div class="chat-name">
         <p>${contact.name}</p>
-      </div>
-      <!-- The time when the last message was sent or recieved -->
-      <div
-        class="last-message-time js-last-message-time"
-        data-contact-id="${contact.id}"
-      >
-        ${contact.lastChatDate}
       </div>
     </div>
     <p class="recent-message">${contact.lastMessage}</p>
