@@ -2,15 +2,20 @@ p {
   display: inline-block;
 }
 .chats-panel {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
-  top: 45px;
+  flex-direction: column;
+  /* top: 45px;
   left: 50px;
-  bottom: 0;
-  width: 330px;
+  bottom: 0; */
+  margin-left: 55px;
+  margin-top: 45px;
+  height: 92vh;
+  width: 380px;
+  /* flex: 1; */
   background-color: rgb(45, 45, 45);
   border-radius: 6px 0 0 0;
-  box-shadow: 1px 0 2px rgb(37, 37, 37);
+  box-shadow: 1px 0 3px rgb(30, 30, 30);
   z-index: 101;
   color: white;
 }
@@ -18,7 +23,6 @@ p {
 .chats-panel-header {
   display: flex;
   flex-direction: column;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -34,7 +38,6 @@ p {
 }
 
 .chats-panel-chats-label {
-  /* font-weight: bold; */
   font-size: 23px;
 }
 
@@ -53,7 +56,7 @@ p {
 
 .chats-panel-search {
   height: 30px;
-  width: 90%;
+  width: 100%;
   font-size: 16px;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -71,7 +74,7 @@ p {
 }
 .chats-panel-search-panel {
   margin-top: -5px;
-  width: 95%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -93,12 +96,14 @@ p {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  /* overflow-x: hidden; */
   width: 100%;
   background: transparent;
-  max-height: 100vh;
+  height: 100%;
   scrollbar-width: 12px;
   scrollbar-color: rgb(155, 155, 155);
-  margin-top: 130px;
+  margin-top: 10px;
+  border: 2px solid brown;
 }
 
 .chats-main-conatiner::-webkit-scrollbar {
@@ -121,20 +126,25 @@ p {
   display: flex;
   align-items: top;
   background: transparent;
-  width: 300px;
+  width: 95%;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
-  margin-bottom: 5px;
-  margin-left: 10px;
+  padding-right: 5px;
+  border: 1px solid cyan;
   color: white;
-  position: relative;
+  box-sizing: border-box;
 }
 .last-message-time {
   font-size: 13px;
   color: rgb(202, 202, 202);
-  width: 50px;
+  /* width: 100%; */
+  /* flex: 1; */
+  width: 80px;
+  display: flex;
+  justify-content: end;
   margin-top: 10px;
+  border: 1px solid green;
 }
 .chat-container p {
   margin-top: 5px;
@@ -151,15 +161,17 @@ p {
   border-radius: 50%;
 }
 .chat-preview-container {
-  max-width: 75%;
-  flex: 1;
+  width: calc(100% - 55px);
+  box-sizing: border-box;
+  /* flex: 1; */
+  box-sizing: border-box;
 }
 .chat-name-and-time-container {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
   align-items: center;
-  /* background-color: pink; */
+  border: 1px solid orange;
 }
 .chat-name,
 .recent-message {
@@ -170,8 +182,10 @@ p {
 .recent-message {
   width: 90%;
   color: rgb(216, 216, 216);
+  border: 1px solid green;
 }
 .chat-name {
   font-weight: bold;
-  width: 70%;
+  width: 65%;
+  border: 1px solid green;
 }
