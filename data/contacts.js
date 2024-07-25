@@ -6,6 +6,7 @@ export let contacts = [
     lastMessage: "Rafet na toropp",
     lastChatDate: "20/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
   },
   {
     id: "id2",
@@ -14,22 +15,25 @@ export let contacts = [
     lastMessage: "Hi everyone, there shall be class tomorrow.",
     lastChatDate: "15/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
   },
   {
     id: "id3",
     name: "Salim UTG",
-    profilePicture: "profile-pictures/profile-picture-1.jpeg",
+    profilePicture: "profile-pictures/no-profile.jpg",
     lastMessage: "https://www.facebook.com/my-profile",
     lastChatDate: "20/07/2024",
     status: "sent",
+    unreadMessagesCount: 0,
   },
   {
     id: "id4",
     name: "Sidat Janka",
-    profilePicture: "profile-pictures/profile-picture-2.jpeg",
+    profilePicture: "profile-pictures/no-profile.jpg",
     lastMessage: "Can you help me with Networking notes?",
     lastChatDate: "20/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
   },
   {
     id: "id5",
@@ -38,6 +42,7 @@ export let contacts = [
     lastMessage: "Wonderful. So, how are you doing?",
     lastChatDate: "20/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
   },
   {
     id: "id6",
@@ -46,14 +51,16 @@ export let contacts = [
     lastMessage: "Boy, Management.",
     lastChatDate: "19/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
   },
   {
     id: "id7",
     name: "PJ Pa Modou Jallow",
-    profilePicture: "profile-pictures/profile-picture-7.jpeg",
+    profilePicture: "profile-pictures/pa-modou.jpg",
     lastMessage: "*Wellcome",
     lastChatDate: "19/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
   },
   {
     id: "id8",
@@ -62,6 +69,7 @@ export let contacts = [
     lastMessage: 'Reacted ❤ to "You too man"',
     lastChatDate: "18/07/2024",
     status: "reaction",
+    unreadMessagesCount: 0,
   },
   {
     id: "id9",
@@ -70,6 +78,7 @@ export let contacts = [
     lastMessage: 'Reacted 👍 to "I get your point"',
     lastChatDate: "18/07/2024",
     status: "reaction",
+    unreadMessagesCount: 0,
   },
   {
     id: "id10",
@@ -78,6 +87,7 @@ export let contacts = [
     lastMessage: "Hey, how are you feeling today?",
     lastChatDate: "20/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
   },
   {
     id: "id11",
@@ -86,6 +96,7 @@ export let contacts = [
     lastMessage: "😂",
     lastChatDate: "10/07/2024",
     status: "sent",
+    unreadMessagesCount: 0,
   },
   {
     id: "id12",
@@ -94,5 +105,15 @@ export let contacts = [
     lastMessage: "You dey craze?",
     lastChatDate: "10/07/2024",
     status: "received",
+    unreadMessagesCount: 0,
+  },
+  {
+    id: "id13",
+    name: "Algasim Jallow",
+    profilePicture: "profile-pictures/algasim.jpg",
+    lastMessage: "Condolences accepted",
+    lastChatDate: "10/07/2024",
+    status: "received",
+    unreadMessagesCount: 0,
   },
 ];

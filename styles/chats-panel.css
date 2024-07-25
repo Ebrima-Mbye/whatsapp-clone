@@ -2,12 +2,8 @@ p {
   display: inline-block;
 }
 .chats-panel {
-  /* position: fixed; */
   display: flex;
   flex-direction: column;
-  /* top: 45px;
-  left: 50px;e4
-  bottom: 0; */
   margin-left: 55px;
   margin-top: 45px;
   height: 92vh;
@@ -15,7 +11,6 @@ p {
   width: 35%;
   max-width: 420px;
   min-width: 100px;
-  /* flex: 1; */
   background-color: rgb(45, 45, 45);
   border-radius: 6px 0 0 0;
   box-shadow: 1px 0 3px rgb(30, 30, 30);
@@ -99,14 +94,12 @@ p {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  /* overflow-x: hidden; */
   width: 100%;
   background: transparent;
   height: 100%;
   scrollbar-width: 12px;
   scrollbar-color: rgb(155, 155, 155);
   margin-top: 10px;
-  /* border: 2px solid brown; */
 }
 
 .chats-main-conatiner::-webkit-scrollbar {
@@ -133,7 +126,6 @@ p {
   padding-top: 10px;
   padding-bottom: 5px;
   padding-right: 5px;
-  /* border: 1px solid cyan; */
   color: white;
   box-sizing: border-box;
 }
@@ -141,15 +133,10 @@ p {
   font-size: 13px;
   color: rgb(202, 202, 202);
   white-space: nowrap;
-  /* width: 80px; */
-  /* flex-shrink: 0; */
   display: flex;
   justify-content: end;
   margin-top: 10px;
-  /* border: 1px solid green; */
   z-index: 1000;
-  /* position: absolute;
-  right: 0; */
 }
 .chat-container p {
   margin-top: 5px;
@@ -169,9 +156,7 @@ p {
   width: calc(100% - 1000px);
   flex: 1;
   box-sizing: border-box;
-  /* flex: 1; */
   box-sizing: border-box;
-  /* border: 1px solid greenyellow; */
   flex-direction: column;
 }
 .chat-name-and-time-container {
@@ -179,8 +164,6 @@ p {
   justify-content: space-between;
   max-width: 100%;
   align-items: center;
-  /* border: 1px solid orange; */
-  /* position: relative; */
 }
 .chat-name,
 .recent-message {
@@ -191,12 +174,26 @@ p {
 .recent-message {
   width: 90%;
   color: rgb(216, 216, 216);
-  /* border: 1px solid green; */
 }
 .chat-name {
   font-weight: bold;
   flex: 1;
-  /* width: 65%; */
   margin-right: 10px;
-  /* border: 1px solid green; */
+}
+
+.messages-preview-and-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-unread-messages {
+  background-color: rgb(37, 211, 102);
+  border-radius: 20px;
+  padding: 1px 5px;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: helvetica;
+  font-family: sans-serif;
 }
