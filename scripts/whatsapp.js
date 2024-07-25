@@ -51,17 +51,6 @@ function designLastMessageTime() {
 
 designLastMessageTime();
 
-// setInterval(() => {
-//   contacts.forEach((contact) => {
-//     contact.unreadMessagesCount++;
-//     document
-//       .querySelectorAll(".js-chat-unread-messages")
-//       .forEach((unreadCount) => {
-//         unreadCount.innerHTML = formatCount(contact.unreadMessagesCount);
-//       });
-//   });
-// }, 1000);
-
 function formatCount(messageCount) {
   /* supposed to display '1k' for '1000', 
   '2k" for '2000', and so on */
@@ -75,4 +64,32 @@ function formatCount(messageCount) {
   } else if (messageStr.length >= 7 && messageStr.length <= 9) {
     return messageStr.substring(0, messageStr.length - 6) + "m";
   } else return messageCount.toString();
+}
+function updateContactUnreadMessagesCount(contact) {
+  document
+    .querySelectorAll(".js-chat-unread-messages")
+    .forEach((unreadCount) => {
+      unreadCount.innerHTML = formatCount(contact.unreadMessagesCount);
+    });
+}
+function simulateIncomingMessages() {
+  setInterval(() => {
+    contacts.forEach((contact) => {
+      contact.unreadMessagesCount++;
+      updateContactUnreadMessagesCount(contact);
+      updateTotalUnreadMessagesCount();
+    });
+  }, 1);
+}
+
+simulateIncomingMessages(); // for testing purposes
+
+function updateTotalUnreadMessagesCount() {
+  let totalNewMessagesCount = 0;
+  contacts.forEach((contact) => {
+    totalNewMessagesCount += contact.unreadMessagesCount;
+  });
+  document.querySelector(".js-total-unread-messages").innerHTML = formatCount(
+    totalNewMessagesCount
+  );
 }
