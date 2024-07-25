@@ -1,3 +1,11 @@
+hr {
+  width: 40px;
+  height: 1px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  height: 0%;
+  border: 1px solid rgb(50, 50, 50);
+}
 .left-side-panel {
   position: fixed;
   left: 0;
@@ -5,4 +13,82 @@
   bottom: 0;
   width: 55px;
   background-color: rgb(29, 29, 29);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 60px;
+}
+
+.left-panel-top,
+.left-panel-bottom {
+  height: 180px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-icon-container {
+  min-height: 50px;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.left-panel-top-sub {
+  width: 100%;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-panel-bottom-sub-one,
+.left-panel-bottom-sub-two {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container {
+  width: 100%;
+  /* flex: 1; */
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  max-width: 50%;
+  max-height: 50%;
+  background: transparent;
+  border: none;
+}
+
+.user-icon {
+  border-radius: 50%;
+  width: 24px;
+  min-height: 25px;
+}
+
+.chats-icon-container,
+.archive-icon-container {
+  position: relative;
+}
+
+.total-unread-messages,
+.archive-notification {
+  background-color: rgb(37, 211, 102);
+  border-radius: 20px;
+  padding: 1px 5px;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: helvetica;
+
+  position: absolute;
+  top: 3px;
+  right: 7px;
 }

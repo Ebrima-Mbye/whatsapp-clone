@@ -51,16 +51,16 @@ function designLastMessageTime() {
 
 designLastMessageTime();
 
-setInterval(() => {
-  contacts.forEach((contact) => {
-    contact.unreadMessagesCount++;
-    document
-      .querySelectorAll(".js-chat-unread-messages")
-      .forEach((unreadCount) => {
-        unreadCount.innerHTML = formatCount(contact.unreadMessagesCount);
-      });
-  });
-}, 1000);
+// setInterval(() => {
+//   contacts.forEach((contact) => {
+//     contact.unreadMessagesCount++;
+//     document
+//       .querySelectorAll(".js-chat-unread-messages")
+//       .forEach((unreadCount) => {
+//         unreadCount.innerHTML = formatCount(contact.unreadMessagesCount);
+//       });
+//   });
+// }, 1000);
 
 function formatCount(messageCount) {
   /* supposed to display '1k' for '1000', 
