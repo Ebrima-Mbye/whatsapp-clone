@@ -1,4 +1,5 @@
 import { contacts } from "../data/contacts.js";
+import { showNofitication } from "./notification.js";
 
 let contactsHTML = "";
 
@@ -93,3 +94,9 @@ function updateTotalUnreadMessagesCount() {
     totalNewMessagesCount
   );
 }
+
+// simulate notifications
+setInterval(() => {
+  let randomIndex = Math.floor(Math.random() * contacts.length) + 1;
+  showNofitication(randomIndex);
+}, 10000);

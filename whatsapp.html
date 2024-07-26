@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/top-panel.css" />
     <link rel="stylesheet" href="/styles/chats-panel.css" />
     <link rel="stylesheet" href="/styles/right-interractions-panel.css" />
+    <link rel="stylesheet" href="/styles/notification.css" />
   </head>
   <body>
     <div class="top-panel">
@@ -119,6 +120,30 @@
       </div>
       <!-- </div> -->
       <div class="encryption-message">End-to-end enrypted</div>
+    </div>
+
+    <!-- For notifications -->
+    <div class="notification-container js-notification-container">
+      <div class="notification-logo-and-close-button-section">
+        <div class="whatsapp-logo-and-label">
+          <img src="/icons/whatsapp-logo.jpg" />
+          <p>WhatsApp</p>
+        </div>
+        <button>X</button>
+      </div>
+      <div class="notification-profile-and-name-section">
+        <div class="notification-profile-container">
+          <img src="/profile-pictures/mygirl.jpg" />
+        </div>
+        <p><span class="notification-sender-name">My Girl</span><br />xyz</p>
+      </div>
+      <div class="notification-message-container">
+        <p>Hey, how are you feeling today?</p>
+      </div>
+      <div class="notification-input-and-time-container">
+        <input class="notification-input" placeholder="Reply message" />
+        <div class="notification-time">21:00</div>
+      </div>
     </div>
 
     <script type="module" src="/scripts/whatsapp.js"></script>
