@@ -7,7 +7,7 @@ p {
   margin-left: 57px;
   margin-top: 45px;
   height: calc(100vh - 45px);
-  width: 36%;
+  width: 33%;
   max-width: 420px;
   min-width: 100px;
   background-color: rgb(45, 45, 45);
@@ -72,7 +72,7 @@ p {
 }
 
 .chats-panel-search::placeholder {
-  color: rgb(188, 187, 187);
+  color: rgb(187, 187, 187);
 }
 .chats-panel-search-panel {
   margin-top: -5px;
@@ -98,14 +98,14 @@ p {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  width: calc(100% - 30px);
+  width: 100%;
   background: transparent;
   height: 100%;
   scrollbar-width: 12px;
   scrollbar-color: rgb(155, 155, 155);
   padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 10px;
+  /* padding-left: 20px;
+  padding-right: 10px; */
 }
 
 .chats-main-conatiner::-webkit-scrollbar {
@@ -127,12 +127,12 @@ p {
 .chat-container {
   display: flex;
   background: transparent;
-  width: calc(100% - 5px);
-  padding-left: 5px;
-  padding-bottom: 25px;
+  width: 100%;
+  padding: 10px 20px;
   color: white;
   box-sizing: border-box;
   cursor: default;
+  border-radius: 5px;
 }
 
 .chat-container:hover {

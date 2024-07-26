@@ -53,7 +53,6 @@ hr {
 
 .icon-container {
   width: 100%;
-  /* flex: 1; */
   height: 45%;
   display: flex;
   justify-content: center;
