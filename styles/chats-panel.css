@@ -7,8 +7,7 @@ p {
   margin-left: 57px;
   margin-top: 45px;
   height: calc(100vh - 45px);
-  width: 350px;
-  width: 35%;
+  width: 36%;
   max-width: 420px;
   min-width: 100px;
   background-color: rgb(45, 45, 45);
@@ -25,9 +24,12 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  height: 120px;
+  height: 100px;
   border-radius: 10px 0 0 0;
-  padding: 20px 20px 0;
+  padding: 20px 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .chats-panel-header-top {
@@ -96,13 +98,14 @@ p {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  width: 100%;
+  width: calc(100% - 30px);
   background: transparent;
   height: 100%;
   scrollbar-width: 12px;
   scrollbar-color: rgb(155, 155, 155);
-  margin-top: 20px;
   padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .chats-main-conatiner::-webkit-scrollbar {
@@ -124,11 +127,9 @@ p {
 .chat-container {
   display: flex;
   background: transparent;
-  width: 100%;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  padding-right: 5px;
+  width: calc(100% - 5px);
+  padding-left: 5px;
+  padding-bottom: 25px;
   color: white;
   box-sizing: border-box;
   cursor: default;
