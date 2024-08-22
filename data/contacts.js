@@ -82,7 +82,7 @@ export let contacts = [
   },
   {
     id: "id10",
-    name: "My Girl",
+    name: "I Njie",
     profilePicture: "profile-pictures/mygirl.jpg",
     lastMessage: "Hey, how are you feeling today?",
     lastChatDate: "20/07/2024",

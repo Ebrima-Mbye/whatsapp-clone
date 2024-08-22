@@ -46,7 +46,14 @@ p {
 .chats-panel-header-top-right {
   display: flex;
   justify-content: space-between;
-  width: 50px;
+  width: 65px;
+  height: 17px;
+  margin-right: -5px;
+}
+
+.chats-panel-header-top-right img {
+  height: 100%;
+  background: transparent;
 }
 
 .chats-panel-header-bottom {
@@ -65,6 +72,9 @@ p {
   color: white;
   padding-left: 10px;
 }
+/* .chats-panel-search:focus{
+  background-color: black;
+} */
 
 .chats-panel-search,
 .chats-panel-search-icon {
@@ -104,8 +114,6 @@ p {
   scrollbar-width: 12px;
   scrollbar-color: rgb(155, 155, 155);
   padding-bottom: 15px;
-  /* padding-left: 20px;
-  padding-right: 10px; */
 }
 
 .chats-main-conatiner::-webkit-scrollbar {

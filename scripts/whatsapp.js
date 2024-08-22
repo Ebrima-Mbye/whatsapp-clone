@@ -83,8 +83,6 @@ function simulateIncomingMessages() {
   }, 1);
 }
 
-simulateIncomingMessages(); // for testing purposes
-
 function updateTotalUnreadMessagesCount() {
   let totalNewMessagesCount = 0;
   contacts.forEach((contact) => {
@@ -96,7 +94,12 @@ function updateTotalUnreadMessagesCount() {
 }
 
 // simulate notifications
-setInterval(() => {
-  let randomIndex = Math.floor(Math.random() * contacts.length) + 1;
-  showNofitication(randomIndex);
-}, 10000);
+function simulateNotifications() {
+  setInterval(() => {
+    let randomIndex = Math.floor(Math.random() * contacts.length) + 1;
+    showNofitication(randomIndex);
+  }, 10000);
+}
+
+simulateIncomingMessages(); // for testing purposes
+simulateNotifications(); // for testing purposes

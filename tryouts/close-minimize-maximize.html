@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <style>
+        /* Add some basic styling for the title bar */
+        .titlebar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #075E54; /* WhatsApp green color */
+            color: white;
+            padding: 10px;
+            -webkit-app-region: drag; /* Allows dragging of the window */
+        }
+
+        .titlebar button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+            -webkit-app-region: no-drag; /* Makes buttons non-draggable */
+        }
+    </style>
+</head>
+<body>
+    <div class="titlebar">
+        <button class="minimize" onclick="minimizeWindow()">_</button>
+        <button class="maximize" onclick="maximizeWindow()">⬜</button>
+        <button class="close" onclick="closeWindow()">✖</button>
+    </div>
+
+    <!-- Your app's content goes here -->
+
+    <script>
+        function maximizeWindow() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else {
+                document.documentElement.requestFullscreen();
+            }
+        }
+
+        function minimizeWindow() {
+            document.body.style.display = 'none';
+            setTimeout(() => {
+                document.body.style.display = '';
+            }, 1000); // Simulate minimize for 1 second
+        }
+        
+        function closeWindow() {
+            document.body.style.display = 'none';
+        }        
+    </script>
+</body>
+</html>
