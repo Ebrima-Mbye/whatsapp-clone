@@ -55,3 +55,9 @@ p {
 .encryption-message img {
   height: 14px;
 }
+
+/* Font Awesome Icons */
+.whatsapp-gray-icon {
+  color: rgb(82, 82, 82);
+  font-size: 70px;
+}

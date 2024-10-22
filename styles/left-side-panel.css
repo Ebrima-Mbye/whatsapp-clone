@@ -91,3 +91,25 @@ hr {
   top: 3px;
   right: 7px;
 }
+
+/* Font Awesome Icons */
+
+.fa-bars,
+.fa-brands,
+.fa-phone,
+.fa-circle-up,
+.fa-star,
+.fa-box-archive,
+.fa-gear {
+  color: white;
+  font-size: 20px;
+}
+
+.notifcation-whatsapp-logo,
+.app-logo {
+  color: rgb(37, 211, 102);
+}
+
+.app-logo {
+  font-size: 30px;
+}
