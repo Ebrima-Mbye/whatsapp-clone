@@ -100,7 +100,8 @@ hr {
 .fa-circle-up,
 .fa-star,
 .fa-box-archive,
-.fa-gear {
+.fa-gear,
+.fa-user {
   color: white;
   font-size: 20px;
 }
